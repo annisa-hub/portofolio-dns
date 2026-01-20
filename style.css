@@ -1,0 +1,267 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mengatur jenis huruf utama untuk seluruh body */
+    margin: 0; /* Menghapus margin default body */
+    padding: 0; /* Menghapus padding default body */
+    background-color: #f0f8ff; /* Light Cyan - Mengatur warna latar belakang body */
+    color: #333; /* Mengatur warna teks utama */
+    line-height: 1.6; /* Mengatur tinggi baris teks untuk keterbacaan */
+    -webkit-font-smoothing: antialiased; /* Menghaluskan tampilan font untuk browser berbasis WebKit (Safari, Chrome) */
+    -moz-osx-font-smoothing: grayscale; /* Menghaluskan tampilan font untuk browser berbasis Gecko (Firefox) pada macOS */
+}
+
+header {
+    background-color: #007bff; /* Blue - Mengatur warna latar belakang header */
+    color: white; /* Mengatur warna teks di dalam header */
+    padding: 1.5em 0; /* Mengatur padding atas dan bawah header (1.5 kali ukuran font), padding kiri dan kanan 0 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan tipis di bawah header */
+    position: sticky; /* Membuat header tetap berada di atas viewport saat di-scroll */
+    top: 0; /* Menentukan posisi sticky dari atas viewport */
+    z-index: 100; /* Memastikan header berada di atas elemen lain jika ada tumpang tindih */
+}
+
+nav {
+    max-width: 960px; /* Mengatur lebar maksimum navigasi */
+    margin: 0 auto; /* Membuat navigasi berada di tengah secara horizontal */
+    padding: 0 20px; /* Mengatur padding kiri dan kanan navigasi */
+}
+
+nav ul {
+    list-style: none; /* Menghapus bullet point pada list navigasi */
+    padding: 0; /* Menghapus padding default list navigasi */
+    margin: 0; /* Menghapus margin default list navigasi */
+    text-align: center; /* Membuat item navigasi berada di tengah horizontal */
+}
+
+nav ul li {
+    display: inline; /* Membuat item list navigasi berada dalam satu baris */
+    margin: 0 15px; /* Memberikan jarak horizontal antar item navigasi */
+}
+
+nav ul li a {
+    color: white; /* Mengatur warna teks link navigasi */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-weight: bold; /* Membuat teks link menjadi tebal */
+    transition: color 0.3s ease; /* Membuat transisi warna yang halus saat di-hover */
+}
+
+nav ul li a:hover {
+    color: #e9ecef; /* Light Gray - Mengubah warna teks link saat kursor berada di atasnya */
+}
+
+nav ul li a.active {
+    color: #ffe4c4; /* Bisque - Mengatur warna teks link yang aktif atau sedang dipilih */
+}
+
+main {
+    padding: 30px; /* Memberikan padding di sekitar konten utama */
+    max-width: 960px; /* Mengatur lebar maksimum konten utama */
+    margin: 30px auto; /* Membuat konten utama berada di tengah secara horizontal dengan margin atas dan bawah */
+    background-color: white; /* Mengatur warna latar belakang konten utama */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Menambahkan efek bayangan di sekitar konten utama */
+    border-radius: 12px; /* Membuat sudut konten utama menjadi sedikit melengkung */
+}
+
+h1,
+h2,
+h3 {
+    color: #007bff; /* Blue - Mengatur warna teks untuk heading level 1, 2, dan 3 */
+}
+
+a {
+    color: #007bff; /* Blue - Mengatur warna teks untuk link secara umum */
+    text-decoration: none; /* Menghapus garis bawah pada link secara umum */
+    transition: color 0.3s ease; /* Membuat transisi warna yang halus untuk link secara umum */
+}
+
+a:hover {
+    color: #0056b3; /* Darker Blue - Mengubah warna teks link saat kursor berada di atasnya secara umum */
+}
+
+footer {
+    text-align: center; /* Membuat teks di dalam footer berada di tengah horizontal */
+    padding: 1em 0; /* Mengatur padding atas dan bawah footer */
+    background-color: #333; /* Mengatur warna latar belakang footer */
+    color: white; /* Mengatur warna teks di dalam footer */
+    position: sticky; /* Membuat footer tetap berada di bagian bawah viewport */
+    bottom: 0; /* Menentukan posisi sticky dari bawah viewport */
+    width: 100%; /* Membuat lebar footer menjadi 100% dari viewport */
+}
+
+/* Home Page Styles */
+.home .profile {
+    text-align: center; /* Membuat konten di dalam bagian profil berada di tengah horizontal */
+    padding: 30px 0; /* Memberikan padding atas dan bawah pada bagian profil */
+}
+
+.home .profile img {
+    width: 200px; /* Mengatur lebar gambar profil */
+    height: 200px; /* Mengatur tinggi gambar profil */
+    border-radius: 50%; /* Membuat gambar profil menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi, mungkin dipotong jika rasio aspek tidak sesuai */
+    margin-bottom: 20px; /* Memberikan jarak antara gambar profil dan elemen di bawahnya */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada gambar profil */
+}
+
+.home .profile .identity h1 {
+    margin-top: 0; /* Menghapus margin atas default pada heading */
+    font-size: 2.5em; /* Mengatur ukuran font heading */
+    color: #2c3e50; /* Dark Blue Gray - Mengatur warna teks heading identitas */
+}
+
+.home .profile .identity p {
+    font-size: 1.1em; /* Mengatur ukuran font paragraf identitas */
+    color: #555; /* Mengatur warna teks paragraf identitas */
+    margin-bottom: 8px; /* Memberikan jarak antara paragraf identitas */
+}  
+
+
+
+/* About Me Page Styles */
+.about .profile-detail {
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak elemen di dalamnya */
+    align-items: center; /* Membuat item flex berada di tengah secara vertikal */
+    padding: 30px 0; /* Memberikan padding atas dan bawah pada detail profil */
+}
+
+.about .profile-detail img {
+    width: 700px; /* Mengatur lebar gambar profil di halaman about me */
+    height: 300px; /* Mengatur tinggi gambar profil di halaman about me */
+    border-radius: 50%; /* Membuat gambar profil di halaman about me menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+    margin-right: 30px; /* Memberikan jarak antara gambar dan teks di sebelah kanan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada gambar profil di halaman about me */
+}
+
+.about .profile-detail p {
+    font-size: 1.1em; /* Mengatur ukuran font paragraf detail profil */
+    color: #555; /* Mengatur warna teks paragraf detail profil */
+    margin-bottom: 200px; /* Memberikan jarak antar paragraf detail profil */
+    box-sizing: content-box;
+}
+
+.about .profile-detail strong {
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    color: #007bff; /* Blue - Mengatur warna teks yang ditekankan */
+}
+
+.about .profile-detail a {
+    text-decoration: underline; /* Memberikan garis bawah pada link di detail profil */
+}
+
+/* Certificates Page Styles */
+.certificates .certificate-grid {
+    display: grid; /* Menggunakan grid layout untuk menampilkan sertifikat */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Membuat kolom responsif dengan lebar minimum 280px */
+    gap: 25px; /* Memberikan jarak antar item grid */
+    padding: 20px 0; /* Memberikan padding atas dan bawah pada grid sertifikat */
+}
+
+.certificates .certificate-item {
+    border: 1px solid #ddd; /* Memberikan border tipis pada setiap item sertifikat */
+    padding: 20px; /* Memberikan padding di dalam setiap item sertifikat */
+    border-radius: 8px; /* Membuat sudut item sertifikat menjadi sedikit melengkung */
+    text-align: center; /* Membuat teks di dalam item sertifikat berada di tengah horizontal */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Menambahkan efek bayangan tipis pada item sertifikat */
+    transition: transform 0.2s ease-in-out; /* Membuat transisi halus saat di-hover */
+}
+
+.certificates .certificate-item:hover {
+    transform: translateY(-5px); /* Membuat item sertifikat sedikit naik saat di-hover */
+}
+
+.certificates .certificate-item img {
+    max-width: 100%; /* Membuat lebar gambar tidak melebihi lebar container */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    margin-bottom: 15px; /* Memberikan jarak antara gambar dan teks di bawahnya */
+    border-radius: 4px; /* Membuat sudut gambar sertifikat menjadi sedikit melengkung */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06); /* Menambahkan efek bayangan tipis pada gambar sertifikat */
+}
+
+.certificates .certificate-item p {
+    font-size: 0.95em; /* Mengatur ukuran font teks di bawah gambar sertifikat */
+    color: #666; /* Mengatur warna teks di bawah gambar sertifikat */
+    margin-top: 0; /* Menghapus margin atas default pada paragraf */
+}
+
+/* Contact Page Styles */
+.contact {
+    padding: 30px 0; /* Memberikan padding atas dan bawah pada bagian kontak */
+}
+
+.contact .contact-info,
+.contact .contact-form {
+    margin-bottom: 30px; /* Memberikan jarak antara info kontak dan form */
+    padding: 25px; /* Memberikan padding di dalam info kontak dan form */
+    border: 1px solid #e0e0e0; /* Memberikan border tipis pada info kontak dan form */
+    border-radius: 8px; /* Membuat sudut info kontak dan form menjadi sedikit melengkung */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Menambahkan efek bayangan tipis pada info kontak dan form */
+}
+
+.contact .contact-info h2,
+.contact .contact-form h3 {
+    color: #333; /* Mengatur warna teks heading pada info kontak dan form */
+    margin-bottom: 15px; /* Memberikan jarak antara heading dan konten di bawahnya */
+}
+
+.contact .contact-info p {
+    font-size: 1.1em; /* Mengatur ukuran font paragraf pada info kontak */
+    color: #555; /* Mengatur warna teks paragraf pada info kontak */
+    margin-bottom: 20px; /* Memberikan jarak antar paragraf pada info kontak */
+}
+
+.contact .contact-info ul {
+    list-style: none; /* Menghapus bullet point pada list info kontak */
+    padding: 0; /* Menghapus padding default list info kontak */
+}
+
+.contact .contact-info ul li {
+    margin-bottom: 12px; /* Memberikan jarak antar item list info kontak */
+    font-size: 1em; /* Mengatur ukuran font item list info kontak */
+}
+
+.contact .contact-info ul li strong {
+    font-weight: bold; /* Membuat teks menjadi tebal pada label info kontak */
+    color: #333; /* Mengatur warna teks label info kontak */
+}
+
+.contact .contact-form .form-group {
+    margin-bottom: 20px; /* Memberikan jarak antar grup form */
+}
+
+.contact .contact-form label {
+    display: block; /* Membuat label menjadi blok elemen agar mengambil seluruh lebar */
+    margin-bottom: 8px; /* Memberikan jarak antara label dan input */
+    font-weight: bold; /* Membuat teks label menjadi tebal */
+    color: #333; /* Mengatur warna teks label */
+}
+
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
+    width: 100%; /* Membuat input dan textarea mengambil seluruh lebar container */
+    padding: 12px; /* Memberikan padding di dalam input dan textarea */
+    border: 1px solid #ccc; /* Memberikan border tipis pada input dan textarea */
+    border-radius: 6px; /* Membuat sudut input dan textarea menjadi sedikit melengkung */
+    box-sizing: border-box; /* Memasukkan padding dan border ke dalam perhitungan lebar dan tinggi elemen */
+    font-size: 1em; /* Mengatur ukuran font di dalam input dan textarea */
+}
+
+.contact .contact-form textarea {
+    resize: vertical; /* Memungkinkan pengguna mengubah tinggi textarea secara vertikal */
+}
+
+.contact .contact-form button {
+    background-color: #28a745; /* Green - Mengatur warna latar belakang tombol */
+    color: white; /* Mengatur warna teks tombol */
+    padding: 12px 20px; /* Memberikan padding pada tombol */
+    border: none; /* Menghapus border tombol */
+    border-radius: 6px; /* Membuat sudut tombol menjadi sedikit melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+    font-size: 1.1em; /* Mengatur ukuran font tombol */
+    transition: background-color 0.3s ease; /* Membuat transisi warna latar belakang yang halus saat di-hover */
+}
+
+.contact .contact-form button:hover {
+    background-color: #218838; /* Darker Green - Mengubah warna latar belakang tombol saat kursor berada di atasnya */
+}
